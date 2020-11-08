@@ -48,4 +48,4 @@ def get_files(path):
     return file_list
 
 if __name__ == '__main__':
-    get_files("C:/Users/dshmunk/PycharmProjects/untitled/venv")
+    get_files("C:/Users/PycharmProjects/")
