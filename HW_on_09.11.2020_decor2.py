@@ -10,10 +10,10 @@ def str_to_html(tags):
             "underline": f"<u>%text%</u>",
         }
         def wrapper(text):
-          replace_text = text
-          for tag in tags:
-            replace_text = tag_base.get(tag).replace("%text%", replace_text)
-          return replace_text
+            replace_text = text
+            for tag in tags:
+                replace_text = tag_base.get(tag).replace("%text%", replace_text)
+            return replace_text
         return wrapper
     return decorator
 
@@ -48,4 +48,4 @@ def get_files(path):
     return file_list
 
 if __name__ == '__main__':
-    get_files("C:/Users/PycharmProjects/")
+    get_files("C:/Users/dshmunk/PycharmProjects/untitled/venv")
