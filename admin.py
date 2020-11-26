@@ -28,8 +28,7 @@ class Administrator(User):
         order.status = 'On hold'
         return order
 
-    # не понял, как провести механизм одобрения админом
-    # здесь попытка с критерием публикации = одобрение товара, то есть оценка 4 или 5
+    # здесь вариант с критерием публикации = одобрение товара, то есть оценка 4 или 5
     def check_review(self, review):
         print(f"Checking review {review.id}")
         if not review.status == 'Moderation':
